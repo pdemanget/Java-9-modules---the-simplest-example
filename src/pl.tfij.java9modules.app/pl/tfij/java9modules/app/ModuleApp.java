@@ -1,11 +1,14 @@
 package pl.tfij.java9modules.app;
 
-import pl.tfij.java9modules.greetings.Greeting;
+
+import java.util.ServiceLoader;
 
 public class ModuleApp {
 
     public static void main(String[] args) {
-        System.out.println(new Greeting().regular("World"));
+        ServiceLoader<IGreeting> sl = ServiceLoader.load(IGreeting.class);
+        IGreeting greeting = sl.findFirst().orElseThrow(NullPointerException::new);
+        System.out.println( greeting.regular("world"));
     }
 
 
