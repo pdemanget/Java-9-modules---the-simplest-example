@@ -16,3 +16,10 @@ Additionally, `linking.sh` builds executable pack which contains only required j
 (compile and package the code using `compile.sh` and `package.sh` before running this script).
 A script 'run-linked.sh' launches main class from this pack.
 The result is the same as running a `run.sh` script.
+
+Addition after fork by pdemanget
+--------------------------------
+I reversed the dependencies in module-info to show the Uses/provides usage in Java 9.
+
+This permits the usage of ServiceLoader and dynamic loading of many modules
+
