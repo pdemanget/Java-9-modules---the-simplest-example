@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-java --module-path mods --module pl.tfij.java9modules.app
+$JAVA_HOME/bin/java --module-path mods --module pl.tfij.java9modules.app

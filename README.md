@@ -23,3 +23,10 @@ I reversed the dependencies in module-info to show the Uses/provides usage in Ja
 
 This permits the usage of ServiceLoader and dynamic loading of many modules
 
+usage:
+compile
+package
+link
+run-linked
+
+
